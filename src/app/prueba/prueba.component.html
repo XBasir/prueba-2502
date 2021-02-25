@@ -1,0 +1,24 @@
+<div>
+    <table>
+        <tr>
+          <th>ID</th>
+          <th>Email</th>
+          <th>First name</th>
+          <th>Last name</th>
+          <th>Document number</th>
+          <th>Phone number</th>
+        </tr>
+        <tr *ngFor="let item of userList">
+          <td>{{item.id}}</td>
+          <td>{{item.email}}</td>
+          <td>{{item.first_name}}</td>
+          <td>{{item.last_name}}</td>
+          <td>{{item.n_document}}</td>
+          <td>{{item.phone_number}}</td>
+        </tr>
+    </table>
+</div>
+
+<div class="btn-box">
+    <button class="btn" (click)="showUsersEmail()">Show emails in console</button>
+</div>
